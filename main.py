@@ -8,7 +8,8 @@ import time
 
 full_teams = get_team_list()
 
-random.shuffle(full_teams)
+for i in range(0, 3):
+    random.shuffle(full_teams)
 
 tweet = Twitter(auth = OAuth(config.access_key, config.access_secret, config.consumer_key, config.consumer_secret))
 
